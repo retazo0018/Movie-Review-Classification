@@ -40,7 +40,7 @@ seed = 1
 train, test = model_selection.train_test_split(featuresets, test_size = 0.25, random_state = seed)
 
 
-# how we use sk learn algorithms in NLTK
+# using sklearn algorithms in NLTK
 from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.svm import SVC
 
@@ -53,3 +53,5 @@ model.train(train)
 # test on test dataset
 accuracy = nltk.classify.accuracy(model,test)
 print('SVC Accuracy: {}'.format(accuracy))
+
+# accuracy obtained - > 0.706
