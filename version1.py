@@ -1,5 +1,8 @@
+# import packages
 import random
 import nltk
+
+# import the dataset
 from nltk.corpus import movie_reviews
 
 # build a list of documents
@@ -10,6 +13,7 @@ documents = [(list(movie_reviews.words(fileid)), category)
 # shuffle the documents
 random.shuffle(documents)
 
+# the list of all words present in each review
 all_words = []
 for w in movie_reviews.words():
     all_words.append(w.lower())
