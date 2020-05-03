@@ -1,2 +1,2 @@
-# Movie_Review_Classification
-The Machine Learning Model classifies the movie user review into positive review or negative review.
+# Movie Review Classification
+The Model classifies the user's movie review into positive review or negative review using NLP and Neural Networks.
